@@ -10,7 +10,7 @@ class CreateEstate < ActiveRecord::Migration
       t.integer :unitPrice, :default => 0, :null => false #每坪單價
       t.integer :price, :null => false                    #總價
       t.boolean :enabled, :null => false
-      t.timestamps        
+      t.timestamps          
     end
 
     add_index :estates, :name
